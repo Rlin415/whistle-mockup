@@ -24,7 +24,8 @@ body {
   min-height: 410px; }
   @media screen and (max-width: 720px) {
     .container {
-      flex-direction: column; } }
+      flex-direction: column;
+      min-height: 730px; } }
 
 /* Monthly */
 .monthly {
