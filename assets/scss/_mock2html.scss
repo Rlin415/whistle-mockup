@@ -1,0 +1,126 @@
+/* Container */
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
+}
+
+/* Monthly */
+
+.monthly {
+  background-color: $lightest-gray;
+  height: 33%;
+  width: 38%;
+  position: relative;
+  min-width: 320px;
+}
+
+.monthly .header,
+.monthly .detail {
+  color: $dark-gray;
+
+  @media screen and (max-width: 1065px) {
+    font-size: 28px;
+  }
+}
+
+.monthly .header {
+  font-family: "proxima_nova_semibold", "sans-serif";
+}
+
+.monthly .detail {
+  font-weight: normal;
+}
+
+.monthly .content {
+  margin-top: 35px;
+  margin-left: 35px;
+  height: calc(100% - 70px);
+  position: relative;
+}
+
+/* Yearly */
+
+.yearly {
+  height: 45%;
+  width: 37%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 7px;
+  border-color: $light-gray;
+  min-width: 360px;
+}
+
+.yearly .content {
+  margin-top: 35px;
+  margin-left: 35px;
+  height: calc(100% - 70px);
+  position: relative;
+}
+
+.yearly .header,
+.yearly .header-continued {
+  font-family: "proxima_nova_semibold", "sans-serif";
+  font-size: 43px;
+
+  @media screen and (max-width: 1065px) {
+    font-size: 35px;
+  }
+}
+
+.yearly .detail {
+  font-weight: normal;
+}
+
+.yearly .original-price {
+  color: $light-gray;
+  display: inline-table;
+  margin-right: 5px;
+}
+
+.yearly .original-price::after {
+  content: "";
+  border-bottom: 0.01em solid $lightest-gray;
+  display: table-caption;
+  caption-side: bottom;
+  position: relative;
+  margin-top: -0.5em;
+}
+
+
+/* Button */
+
+.button {
+  display: flex;
+  background-color: $orange;
+  height: 50px;
+  width: 165px;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Others */
+
+.options {
+  font-family: "proxima_nova_semibold";
+  position: absolute;
+  top: -60;
+}
+
+.cart {
+  margin-right: 15px;
+  height: 20px;
+  width: 22px;
+}
