@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  min-height: 410px;
 
   @media screen and (max-width: 720px) {
     flex-direction: column;
@@ -21,6 +22,7 @@
   width: 38%;
   position: relative;
   min-width: 320px;
+  min-height: 255px;
 }
 
 .monthly .header,
@@ -57,6 +59,7 @@
   border-width: 7px;
   border-color: $light-gray;
   min-width: 360px;
+  min-height: 365px;
 }
 
 .yearly .content {
