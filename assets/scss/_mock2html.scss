@@ -8,6 +8,7 @@
   justify-content: center;
   position: relative;
   min-height: 410px;
+  min-width: 392px;
 
   @media screen and (max-width: 720px) {
     flex-direction: column;

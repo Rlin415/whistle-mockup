@@ -21,7 +21,8 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 410px; }
+  min-height: 410px;
+  min-width: 392px; }
   @media screen and (max-width: 720px) {
     .container {
       flex-direction: column;
